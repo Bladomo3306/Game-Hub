@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3d1a37;
+    color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #5f0b4d;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Adjusted for two-column layout */
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    color: #ff6347; /* Tomato color */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Flex Container for Content */
+.content {
+    display: flex; 
+}
+
+/* Character Display Area */
+.character-display {
+    flex: 1; /* Takes up 50% of the space */
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Guessing Area */
+.guessing-area {
+    flex: 1; /* Takes up 50% of the space */
+    padding: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5533f;
+}
+
+button:active {
+    background-color: #cc4936;
+}
+
+/* Input Styles */
+input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust width to match button size */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ff6347;
+}
+
+#guessButton {
+    display: none;
+}
+
+/* Character Image */
+#characterImage {
+    width: 100%; /* Adjusts the width to 100% of the character display */
+    max-width: 200px; /* Maximum width set to 200px */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+    margin: 20px 0;
+    display: none; /* Hidden until the correct guess */
+}
+
+#playAgain{
+    display: none;
+}
+
+#revealAnswer{
+    display: none;
+}
+
+/* Text/Hint Areas */
+#characterName, #characterPersonality, #characterAppearance, #characterTrivia, #characterAnime, #feedback {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Hint Styling */
+#characterPersonality, #characterAppearance, #characterTrivia, #characterAnime {
+    font-style: italic;
+    color: #8d8d8d;
+}
+
+/* Feedback Styling */
+#feedback {
+    font-weight: bold;
+    color: #ff6347;
+}

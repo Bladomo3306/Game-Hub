@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Character Guesser</title>
+    <link rel="stylesheet" href="../../../PageStyles/GameStyles/AnimeGuesser/AnimeCharacterGuesser.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anime Character Guesser</h1>
+        <div class="content">
+            <div class="character-display">
+                <img id="characterImage" src="" alt="Character Image">
+                <p id="characterName"></p>
+                <p id="characterPersonality"></p>
+                <p id="characterAppearance"></p>
+                <p id="characterTrivia"></p>
+                <p id="characterAnime"></p>
+            </div>
+            <button id ="startGame" onclick="startGame()">Start Game</button>
+
+            <div class="guessing-area">
+                <input type="text" id="playerGuess" placeholder="Type here...">
+                <button id="guessButton" onclick="submitGuess()">Guess</button>
+                <p id="feedback"></p>
+                <button id ="revealAnswer" onclick="revealAnswer()">Reveal Answer</button>
+                <button id ="playAgain" onclick="startGame()">Play Again!</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="AnimeCharacterGuesser.js"></script>
+</body>
+</html>
