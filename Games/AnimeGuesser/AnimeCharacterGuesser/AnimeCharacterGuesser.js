@@ -146,12 +146,12 @@ const characters = [
         anime: "Demon Slayer"
     },
     {
-        "name": "Yumeko",
-        "imageUrl": "../../../Images/GameSprites/AnimeCharacters/Yumeko.jpg",
-        "personality": "Fearless, confident, unpredictable, and a compulsive gambler who derives intense thrill from high-stakes risks despite her polite and charming demeanor.",
-        "appearance": "Long black hair, red eyes, and a slender build. She is usually seen wearing the private academy uniform, consisting of a red blazer and black skirt.",
-        "trivia": "Her gambling skills are unmatched, and she possesses an uncanny ability to read her opponents' behavior. Her true goal is not wealth, but the excitement and chaos of gambling.",
-        "anime": "Kakegurui"
+        name: "Yumeko",
+        imageUrl: "../../../Images/GameSprites/AnimeCharacters/Yumeko.jpg",
+        personality: "Fearless, confident, unpredictable, and a compulsive gambler who derives intense thrill from high-stakes risks despite her polite and charming demeanor.",
+        appearance: "Long black hair, red eyes, and a slender build. She is usually seen wearing the private academy uniform, consisting of a red blazer and black skirt.",
+        trivia: "Her gambling skills are unmatched, and she possesses an uncanny ability to read her opponents' behavior. Her true goal is not wealth, but the excitement and chaos of gambling.",
+        anime: "Kakegurui"
     }
 ];
 
