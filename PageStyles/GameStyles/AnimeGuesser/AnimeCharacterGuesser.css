@@ -15,46 +15,73 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    position: relative; /* Make the body a positioning context */
 }
 
+/* Back Button Container */
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Back Button Styles */
+#backButton {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the Back Button */
+#backButton:hover {
+    background-color: #e5533f;
+}
+
+/* Container Styling */
 .container {
     background-color: #5f0b4d;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 600px; /* Adjusted for two-column layout */
+    width: 600px;
     text-align: center;
 }
 
 /* Title */
 h1 {
-    color: #ff6347; /* Tomato color */
+    color: #ff6347;
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
 /* Flex Container for Content */
 .content {
-    display: flex; 
+    display: flex;
 }
 
 /* Character Display Area */
 .character-display {
-    flex: 1; /* Takes up 50% of the space */
+    flex: 1;
     padding: 20px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 /* Guessing Area */
 .guessing-area {
-    flex: 1; /* Takes up 50% of the space */
+    flex: 1;
     padding: 20px;
 }
 
 /* Button Styles */
 button {
     background-color: #ff6347;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -75,7 +102,7 @@ button:active {
 /* Input Styles */
 input[type="text"] {
     padding: 10px;
-    width: calc(100% - 22px); /* Adjust width to match button size */
+    width: calc(100% - 22px);
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
@@ -88,36 +115,30 @@ input[type="text"]:focus {
     border-color: #ff6347;
 }
 
-#guessButton {
-    display: none;
-}
-
-/* Character Image */
+/* Hidden Elements */
+#guessButton,
+#playAgain,
+#revealAnswer,
 #characterImage {
-    width: 100%; /* Adjusts the width to 100% of the character display */
-    max-width: 200px; /* Maximum width set to 200px */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px;
-    margin: 20px 0;
-    display: none; /* Hidden until the correct guess */
-}
-
-#playAgain{
-    display: none;
-}
-
-#revealAnswer{
     display: none;
 }
 
 /* Text/Hint Areas */
-#characterName, #characterPersonality, #characterAppearance, #characterTrivia, #characterAnime, #feedback {
+#characterName,
+#characterPersonality,
+#characterAppearance,
+#characterTrivia,
+#characterAnime,
+#feedback {
     font-size: 1rem;
     margin: 10px 0;
 }
 
 /* Hint Styling */
-#characterPersonality, #characterAppearance, #characterTrivia, #characterAnime {
+#characterPersonality,
+#characterAppearance,
+#characterTrivia,
+#characterAnime {
     font-style: italic;
     color: #8d8d8d;
 }

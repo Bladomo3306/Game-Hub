@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Reset and Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Body Styles */
 body {
     background-color: #1e1e1e;
     color: #fff;
@@ -14,8 +14,33 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative; /* Allow absolutely positioned elements */
 }
 
+/* Back Button Styles */
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#backButton {
+    background-color: #f082e1;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backButton:hover {
+    background-color: #f5b4ec;
+}
+
+/* Container Styles */
 .container {
     text-align: center;
     background-color: #2c2c2c;
@@ -24,17 +49,20 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Title Styles */
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #f082e1; /* Gold title */
+    color: #f082e1;
 }
 
+/* Paragraph Styles */
 p {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
+/* Game Button Styles */
 .game-buttons {
     display: flex;
     justify-content: center;
@@ -47,8 +75,8 @@ button {
     border: none;
     padding: 15px 30px;
     font-size: 1.1em;
-    cursor: pointer;
     border-radius: 8px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -56,6 +84,7 @@ button:hover {
     background-color: #f5b4ec;
 }
 
+/* Footer Styles */
 footer {
     margin-top: 40px;
     font-size: 0.9em;

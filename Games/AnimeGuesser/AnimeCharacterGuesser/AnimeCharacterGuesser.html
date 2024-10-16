@@ -6,9 +6,10 @@
     <title>Anime Character Guesser</title>
     <link rel="stylesheet" href="../../../PageStyles/GameStyles/AnimeGuesser/AnimeCharacterGuesser.css">
 </head>
-<back><button onclick="window.location.href='../AnimeGuesserHub.html'">Back</button>
-</back>
 <body>
+    <div class="back-button-container">
+        <button id="backButton" onclick="window.location.href='../AnimeGuesserHub.html'">Back</button>
+    </div>
     <div class="container">
         <h1>Anime Character Guesser</h1>
         <div class="content">
@@ -20,15 +21,14 @@
                 <p id="characterTrivia"></p>
                 <p id="characterAnime"></p>
             </div>
-            <button id ="startGame" onclick="startGame()">Start Game</button>
+            <button id="startGame" onclick="startGame()">Start Game</button>
 
             <div class="guessing-area">
                 <input type="text" id="playerGuess" placeholder="Type here...">
                 <button id="guessButton" onclick="submitGuess()">Guess</button>
                 <p id="feedback"></p>
-                <button id ="revealAnswer" onclick="revealAnswer()">Reveal Answer</button>
-                <button id ="playAgain" onclick="startGame()">Play Again!</button>
-
+                <button id="revealAnswer" onclick="revealAnswer()">Reveal Answer</button>
+                <button id="playAgain" onclick="startGame()">Play Again!</button>
             </div>
         </div>
     </div>

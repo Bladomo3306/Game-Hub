@@ -1,0 +1,50 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style for the body */
+  body {
+    background-color: #0d1117; /* Dark background for a modern look */
+    color: #c9d1d9; /* Soft white text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Container for the message */
+  .container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #58a6ff; /* Bright border */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.5);
+    background-color: #161b22; /* Slightly lighter background for contrast */
+  }
+  
+  /* Heading style */
+  .message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #58a6ff; /* Vibrant blue for the main message */
+  }
+  
+  /* Paragraph style */
+  .message p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #8b949e; /* Softer gray text for additional information */
+  }
+  
+  /* Optional: Add some hover animation */
+  .container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
